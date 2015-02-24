@@ -8,6 +8,19 @@ body {
 }
 
 /**
+ * Carousel Background
+ */ 
+.carousel-background {
+    background-attachment: initial;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.featurette-text-top {
+    margin: 0;
+}
+
+/**
  * Google Web Fonts
  */
 

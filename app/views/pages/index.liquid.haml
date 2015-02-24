@@ -128,31 +128,95 @@ published: true
       Bootstrap 3 Carousel
       \==================================================
     #myCarousel.carousel.slide{"data-ride" => "carousel"}
-      / %ol.carousel-indicators
-      /   %li.active{"data-target" => "#myCarousel", "data-slide-to" => "0"}
-      /   %li{"data-target" => "#myCarousel", "data-slide-to" => "1"}
-      /   %li{"data-target" => "#myCarousel", "data-slide-to" => "2"}
+      %ol.carousel-indicators
+        %li.active{"data-target" => "#myCarousel", "data-slide-to" => "0"}
+        %li{"data-target" => "#myCarousel", "data-slide-to" => "1"}
+        %li{"data-target" => "#myCarousel", "data-slide-to" => "2"}
+        %li{"data-target" => "#myCarousel", "data-slide-to" => "3"}
+        %li{"data-target" => "#myCarousel", "data-slide-to" => "4"}
+        %li{"data-target" => "#myCarousel", "data-slide-to" => "5"}
 
       .carousel-inner{role: "listbox"}
-        .item.active
-          %img.img-responsive{src: "http://kvbc.info/sites/default/files/banner/banner02.jpg", alt: "GCF"}
+        .item.active.carousel-background{style: "background-image: url('images/banner-christmas-web.jpg')"}
           .container
             / .carousel-caption
-            /  %h1.font-lobster Graduate Christian Fellowship Malaysia
-            /  %p Mobilise graduates to impact society for the glory of Christ
+            /   %h1.font-lobster East Asia Graduate Conference
+            /   %p Mobilise graduates to impact society for the glory of Christ
+        .item.carousel-background{style: "background-image: url('images/banner-ibridge-web.jpg')"}
+          .container
+            / .carousel-caption
+            /   %h1.font-lobster East Asia Graduate Conference
+            /   %p Mobilise graduates to impact society for the glory of Christ
+        .item.carousel-background{style: "background-image: url('images/banner-nation-web.jpg')"}
+          .container
+            / .carousel-caption
+            /   %h1.font-lobster East Asia Graduate Conference
+            /   %p Mobilise graduates to impact society for the glory of Christ
+        .item.carousel-background{style: "background-image: url('images/banner-worship-web.jpg')"}
+          .container
+            / .carousel-caption
+            /   %h1.font-lobster East Asia Graduate Conference
+            /   %p Mobilise graduates to impact society for the glory of Christ
+        .item.carousel-background{style: "background-image: url('images/banner-outing-web.jpg')"}
+          .container
+            / .carousel-caption
+            /   %h1.font-lobster East Asia Graduate Conference
+            /   %p Mobilise graduates to impact society for the glory of Christ
+        .item.carousel-background{style: "background-image: url('images/banner-eagc-web.jpg')"}
+          .container
+            / .carousel-caption
+            /   %h1.font-lobster East Asia Graduate Conference
+            /   %p Mobilise graduates to impact society for the glory of Christ
 
     / /.carousel
 
+    /
+      Bootstrap 3 Featurettes
+      \==================================================
     .container
-      /
-        Bootstrap 3 Featurettes
-        \==================================================
-      / %hr.featurette-divider
-
       .row.featurette
-        .col-md-12
+        .col-md-9
           %h2.featurette-heading mobilise graduates to impact <br/><span class="text-muted">society for the glory of Christ</span>
           %p.lead “Call to me and I will answer you and tell you great and unsearchable things you do not know.” -Jeremiah 33:3
+        .col-md-3
+          %img.featurette-image.img-responsive{src: "images/gcf_logo_white_full.png"}
+
+      %hr.featurette-divider
+
+    /
+      Bootstrap 3 Single-image Carousel
+      \==================================================
+    #myCarousel2.carousel
+      .carousel-inner{role: "listbox"}
+        .item.active.carousel-background{style: "background-image: url('images/cny2015-street-simple.jpg')"}
+          .container
+            .carousel-caption
+              %h1.font-lobster {% editable_text eventtitle, hint: "event title", format: raw, rows: 1 %}iBridge Chinese New Year Gathering{% endeditable_text %}
+              %p {% editable_text eventdescription, hint: "event description", format: raw, rows: 1 %}FEBRUARY 28, 2015{% endeditable_text %}
+              %a.btn.btn-success{role: "button", href: "https://www.facebook.com/events/556774091092360"} JOIN US
+      .carousel-caption-background
+
+
+
+
+    /
+      Bootstrap 3 Footer
+      \==================================================
+    .container
+      %hr.featurette-divider
+      %footer
+        %p.pull-right
+          %a{href: "#"} Back to top
+        %p 
+          &copy; 2015 Graduate Christian Fellowship Malaysia 
+          &middot;
+          %a{href: "https://www.facebook.com/gcf.malaysia"} Facebook
+          &middot;
+          %a{href: "mailto:ibridge.email@gmail.com"} Email
+
+    / /.footer
+
+
 
     /
       Bootstrap 3 JS
