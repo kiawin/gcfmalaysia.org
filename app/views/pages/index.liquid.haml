@@ -137,32 +137,32 @@ published: true
         %li{"data-target" => "#myCarousel", "data-slide-to" => "5"}
 
       .carousel-inner{role: "listbox"}
-        .item.active.carousel-background{style: "background-image: url('images/banner-christmas-web.jpg')"}
+        .item.active.carousel-background{style: "background-image: url('{{ 'banner-christmas-web.jpg' | theme_image_url }}')"}
           .container
             / .carousel-caption
             /   %h1.font-lobster East Asia Graduate Conference
             /   %p Mobilise graduates to impact society for the glory of Christ
-        .item.carousel-background{style: "background-image: url('images/banner-ibridge-web.jpg')"}
+        .item.carousel-background{style: "background-image: url('{{ 'banner-ibridge-web.jpg' | theme_image_url }}')"}
           .container
             / .carousel-caption
             /   %h1.font-lobster East Asia Graduate Conference
             /   %p Mobilise graduates to impact society for the glory of Christ
-        .item.carousel-background{style: "background-image: url('images/banner-nation-web.jpg')"}
+        .item.carousel-background{style: "background-image: url('{{ 'banner-nation-web.jpg' | theme_image_url }}')"}
           .container
             / .carousel-caption
             /   %h1.font-lobster East Asia Graduate Conference
             /   %p Mobilise graduates to impact society for the glory of Christ
-        .item.carousel-background{style: "background-image: url('images/banner-worship-web.jpg')"}
+        .item.carousel-background{style: "background-image: url('{{ 'banner-worship-web.jpg' | theme_image_url }}')"}
           .container
             / .carousel-caption
             /   %h1.font-lobster East Asia Graduate Conference
             /   %p Mobilise graduates to impact society for the glory of Christ
-        .item.carousel-background{style: "background-image: url('images/banner-outing-web.jpg')"}
+        .item.carousel-background{style: "background-image: url('{{ 'banner-outing-web.jpg' | theme_image_url }}')"}
           .container
             / .carousel-caption
             /   %h1.font-lobster East Asia Graduate Conference
             /   %p Mobilise graduates to impact society for the glory of Christ
-        .item.carousel-background{style: "background-image: url('images/banner-eagc-web.jpg')"}
+        .item.carousel-background{style: "background-image: url('{{ 'banner-eagc-web.jpg' | theme_image_url }}')"}
           .container
             / .carousel-caption
             /   %h1.font-lobster East Asia Graduate Conference
@@ -179,7 +179,7 @@ published: true
           %h2.featurette-heading mobilise graduates to impact <br/><span class="text-muted">society for the glory of Christ</span>
           %p.lead “Call to me and I will answer you and tell you great and unsearchable things you do not know.” -Jeremiah 33:3
         .col-md-3
-          %img.featurette-image.img-responsive{src: "images/gcf_logo_white_full.png"}
+          %img.featurette-image.img-responsive{src: "{{ 'gcf_logo_white_full.png' | theme_image_url }}"}
 
       %hr.featurette-divider
 
@@ -188,7 +188,7 @@ published: true
       \==================================================
     #myCarousel2.carousel
       .carousel-inner{role: "listbox"}
-        .item.active.carousel-background{style: "background-image: url('images/cny2015-street-simple.jpg')"}
+        .item.active.carousel-background{style: "background-image: url('{{ 'cny2015-street-simple.jpg' | theme_image_url }}')"}
           .container
             .carousel-caption
               %h1.font-lobster {% editable_text eventtitle, hint: "event title", format: raw, rows: 1 %}iBridge Chinese New Year Gathering{% endeditable_text %}
