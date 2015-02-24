@@ -2,3 +2,4 @@
 /config/deploy.yml
 /log
 *.bak
+.sass-cache

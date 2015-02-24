@@ -1,0 +1,45 @@
+body {
+  padding-top: 50px;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+/**
+ * Carousel related hacks
+ */ 
+.carousel-background {
+    background-attachment: initial;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.carousel-caption-background {
+  top: 0;
+  left: 0;
+  margin-top: 300px;
+  min-width: 100%;
+  z-index: 5;
+  position: absolute;
+  height: 200px;
+  background-color: black;
+  opacity: 0.4;
+  filter: alpha(opacity=40)
+}
+
+/**
+ * Featurette related hacks
+ */
+.featurette-text-top {
+    margin: 0;
+}
+
+/**
+ * Google Web Fonts
+ */
+
+.font-lobster {
+    font-family: 'Lobster', cursive;
+}

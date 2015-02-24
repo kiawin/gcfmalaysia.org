@@ -1,6 +1,6 @@
 ---
-title: Home
-published: true
+title: Page Template (Do not edit)
+published: false
 ---
 !!!
 %html{lang: "en"}
@@ -191,8 +191,8 @@ published: true
         .item.active.carousel-background{style: "background-image: url('{{ 'cny2015-street-simple.jpg' | theme_image_url }}')"}
           .container
             .carousel-caption
-              %h1.font-lobster {% editable_text "Event Title", hint: "event title", format: raw, rows: 1 %}iBridge Chinese New Year Gathering{% endeditable_text %}
-              %p {% editable_text "Event Description", hint: "event description", format: raw, rows: 1 %}FEBRUARY 28, 2015{% endeditable_text %}
+              %h1.font-lobster {% editable_text eventtitle, hint: "event title", format: raw, rows: 1 %}iBridge Chinese New Year Gathering{% endeditable_text %}
+              %p {% editable_text eventdescription, hint: "event description", format: raw, rows: 1 %}FEBRUARY 28, 2015{% endeditable_text %}
               %a.btn.btn-success{role: "button", href: "https://www.facebook.com/events/556774091092360"} JOIN US
       .carousel-caption-background
 
