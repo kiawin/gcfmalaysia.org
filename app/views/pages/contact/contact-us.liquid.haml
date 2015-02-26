@@ -1,0 +1,44 @@
+---
+title: Contact Us
+position: 1
+published: true
+---
+{% extends parent %}
+
+{% block carousel/header %}
+%p Us
+{% endblock %}
+
+{% block main/header %}
+%h2.featurette-heading.padding-bottom-50
+  Contact
+  %span.text-muted Us 
+{% endblock %}
+
+{% block main/content %}
+:markdown
+  {% editable_text "content", rows: 20 %}
+  #### Email
+  gcf.msia@gmail.com
+  
+  #### Facebook
+
+  https://www.facebook.com/gcf.malaysia
+  
+  #### Staff Worker
+
+  Jimmy Lee (016-4532275)
+  
+  #### Address
+
+      Graduates’ Christian Fellowship Malaysia
+      386
+      5/59
+      46000 Petaling Jaya
+      Selangor Darul Ehsan
+
+  {% endeditable_text %}
+{% endblock %}
+
+{% block event %}
+{% endblock %}

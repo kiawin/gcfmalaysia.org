@@ -18,6 +18,22 @@ body {
   padding-bottom: 50px;
 }
 
+.vertical-align-top {
+  vertical-align: top;
+}
+
+.margin-top-0 {
+  margin-top: 0;
+}
+
+/**
+ * Nav bar related hacks
+ */
+.dropdown > a,
+.dropdown-menu > li > a {
+  font-size: 120%;
+}
+
 /**
  * Carousel related hacks
  */ 

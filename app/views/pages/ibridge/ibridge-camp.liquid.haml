@@ -18,22 +18,44 @@ published: true
 {% block main/content %}
 :markdown
   {% editable_text "content", rows: 20 %}
-  iBridge organizes Annual iBridge camps since 2011. Our camp are usually held during long public holiday weekend and has attracted 70 to 120 campers every year. 
 
-  iBridge camper once wrote
-
-  "But the ONE thing that a camp can do, that nothing else can as effectively, is to TRANSFORM. And iBridge is in the business of transforming mindsets for victorious & impactful living in the marketplace. We want people to leave the camp with a new way of looking at things. When people come away from their workplace to a safe haven (which we must try to provide), they have a golden opportunity to take a step back, see the big picture of their lives, redefine their goals and chart new directions. All in an atmosphere of prayer and submission to God's purposes."
-
-  Some of the topics from previous iBridge camps:
-
-  * One Career, 101 Lessons
-  * Talent migration
-  * Sabbath 
-  * Practical discernment  - Choosing job, ministries, finding life partner, response to certain opinions etc)
-  * Biblical perspective on financial management - Professional advise on purchasing car, house, investment, saving, generous giving for mission, retirement, etc
+  iBridge Camp is back again! This camp is an opportunity for Christian young working adults from diverse backgrounds and denominations to encourage, fellowship, share, and learn from one another.
   
+  Everyone wants to feel passionate about their job, but passion and pay do not always go hand in hand. The trick for many of us is to figure out how to balance the love for our jobs versus putting food on the table. Can both intersect, or must we always sacrifice one for the other?
+  
+  During these four days, we will have speakers who will share their challenges, experiences, and joy in living their lives; sessions that will make us rethink about our life and how we can improve our current way of living, and of course - making new friends !
+
+  ## Location
+  
+  A place to unwind, relax and enjoy the beauty and sounds of nature. There are times where one just has to get away from the hustle and bustle of the city. What better place than Outbac Broga which is nestled among the beauty of nature with lush greeneries and a flowing stream. The serenity of the sanctuary will immediately envelope you with a sense of relaxation and peace. Just the right place to recharge.
+
+
+  In addition, the annual 'iBridge Camp' which attracts 80-100 graduates yearly has specific workshops tailored just for graduates in these 2 categories:
+
+  * Graduates with 5 years and above working experience
+    
+    "IMPACTING THE MARKET PLACE" 
+
+  * Fresh graduates with below 5 years working experience
+    
+    "TRANSITION TO THE MARKET PLACE" 
+
+  <br />
+
+  **Date:** 29th August – 1st September (Friday-Monday)
+
+  **Venue:** Outbac Broga, Semenyih
+  
+  **Fee:** RM200
+
   {% endeditable_text %}
 {% endblock %}
 
-{% block 'event' %}
+{% block 'event/carousel' %}
+.item.active.carousel-background{style: "background-image: url('{{ 'banner-outing-web.jpg' | theme_image_url }}')"}
+  .container
+    .carousel-caption
+      %h1.font-lobster {% editable_text "Event Title", hint: "event title", format: raw, rows: 1 %}iBridge Camp 2014{% endeditable_text %}
+      %p {% editable_text "Event Description", hint: "event description", format: raw, rows: 1 %}IMPACTING THE MARKET PLACE, TRANSITION TO THE MARKET PLACE{% endeditable_text %}
+      %a.btn.btn-success{role: "button", href: "http://ibridgecamp-2014.blogspot.com"} READ MORE
 {% endblock %}
