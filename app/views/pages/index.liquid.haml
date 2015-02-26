@@ -42,6 +42,8 @@ published: true
         %li{"data-target" => "#myCarousel", "data-slide-to" => "3"}
         %li{"data-target" => "#myCarousel", "data-slide-to" => "4"}
         %li{"data-target" => "#myCarousel", "data-slide-to" => "5"}
+        %li{"data-target" => "#myCarousel", "data-slide-to" => "6"}
+        %li{"data-target" => "#myCarousel", "data-slide-to" => "7"}
 
       .carousel-inner{role: "listbox"}
         .item.active.carousel-background{style: "background-image: url('{{ 'banner-christmas-web.jpg' | theme_image_url }}')"}
@@ -55,6 +57,11 @@ published: true
             /   %h1.font-lobster East Asia Graduate Conference
             /   %p Mobilise graduates to impact society for the glory of Christ
         .item.carousel-background{style: "background-image: url('{{ 'banner-nation-web.jpg' | theme_image_url }}')"}
+          .container
+            / .carousel-caption
+            /   %h1.font-lobster East Asia Graduate Conference
+            /   %p Mobilise graduates to impact society for the glory of Christ
+        .item.carousel-background{style: "background-image: url('{{ 'banner-talks-web.jpg' | theme_image_url }}')"}
           .container
             / .carousel-caption
             /   %h1.font-lobster East Asia Graduate Conference
@@ -74,6 +81,11 @@ published: true
             / .carousel-caption
             /   %h1.font-lobster East Asia Graduate Conference
             /   %p Mobilise graduates to impact society for the glory of Christ
+        .item.carousel-background{style: "background-image: url('{{ 'banner-headstart-web.jpg' | theme_image_url }}')"}
+          .container
+            / .carousel-caption
+            /   %h1.font-lobster East Asia Graduate Conference
+            /   %p Mobilise graduates to impact society for the glory of Christ
 
     / /.carousel
 
@@ -84,13 +96,14 @@ published: true
     .container
       .row.featurette
         .col-md-9
-          %h2.featurette-heading
+          %h2.featurette-heading.margin-top-0
             mobilise graduates to impact
             %br
             %span.text-muted society for the glory of Christ
-          %p.lead “Call to me and I will answer you and tell you great and unsearchable things you do not know.” -Jeremiah 33:3
+          %p.lead We are a non-profit non-exclusive organization for Christian graduates, professionals and anyone who wishes to play a meaningful role in the marketplace and in society in general.
+          %p.lead Growing out from the ministry of the Fellowship of Evangelical Students (FES) in Malaysia and Singapore, Graduate Christian Fellowship (GCF) has evolved from an informal gathering for fellowship and mutual encouragement into a movement of people committed to make a moral impact in the society and make their live count for Christ!
         .col-md-3
-          %img.featurette-image.img-responsive{src: "{{ 'gcf_logo_white_full.png' | theme_image_url }}"}
+          %img.featurette-image.img-responsive.vertical-align-top{src: "{{ 'gcf_logo_white_full.png' | theme_image_url }}"}
 
       .featurette-divider
     / /.featurette

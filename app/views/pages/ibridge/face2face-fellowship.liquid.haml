@@ -18,17 +18,13 @@ published: true
 {% block main/content %}
 :markdown
   {% editable_text "content", rows: 20 %}
-  ## Gatherings, Dinners, Outings
-
-  iBridge organized informal gatherings on an average of once in 3 months. These are avenues where Christians can seek to have fun, fellowship and spiritual friendships.  We believe that great friendships occur most effectively when we spend time together in a community setting.
-
-  Join iBridge Facebook group for announcement of events.
+  Face2Face is a ministry that organizes purposeful events for iBridgers to chill out, network and fellowship with one and another. Activities organised are weekly captain ball games, jogging at TTDI, hiking to places like Sungai Chilling/Klang Gates Hill, rock climbing, open house Christmas celebration, BBQ and pot bless session, movie outings, tea (yam-cha) sessions, and retreats.
   
   {% endeditable_text %}
 {% endblock %}
 
 {% block 'event/carousel' %}
-.item.active.carousel-background{style: "background-image: url('{{ 'banner-outing-web.jpg' | theme_image_url }}')"}
+.item.active.carousel-background{style: "background-image: url('{{ 'banner-christmas-web.jpg' | theme_image_url }}')"}
   .container
     .carousel-caption
       %h1.font-lobster {% editable_text "Event Title", hint: "event title", format: raw, rows: 1 %}iBridge Facebook Group{% endeditable_text %}

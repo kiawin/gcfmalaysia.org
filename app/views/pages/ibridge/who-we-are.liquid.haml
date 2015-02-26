@@ -18,19 +18,13 @@ published: true
 {% block main/content %}
 :markdown
   {% editable_text "content", rows: 20 %}
-  ## What is iBridge  
+  ## Just graduated?
 
-  iBridge is a ministry by Graduates Christian Fellowship of Malaysia (GCF) that is focused on young graduates. It is mainly made up of young Malaysia Christian graduates who aims to Follow Jesus in every aspect of their life.
+   Looking for a group of Christian friends to grow together in your walk with God?
 
-  ## Our Mission
+  Come and join us at iBridge, a growing community of Christians, comprising of young professionals and graduates in Malaysia. We are here to help you in your transition from campus life to the working world.
 
-  iBridge aims to encourage networking, spiritual friendship and mentoring among young Christian graduates in Malaysia.
-
-  * Networking to connect lives in transition
-  * Spiritual Friendships to cultivate praying partners.
-  * Mentoring to create lifelong disciples.
-
-  ## Our Activities
+  iBridge is a growing community of Christians who are fresh graduates and young professionals with 3 years or less working experience in the marketplace and below the age of 30. We seek to actively engage our world and make an impact for Christ in the marketplace, where the daily business and economics of life take place in Malaysia.
 
   If you are a young Christian graduate struggling to:
 
@@ -39,14 +33,24 @@ published: true
   * find meaning in your work,
   * keep your faith alive...
 
-  then the iBridge community is here to help you find spiritual friends who are also fellow pilgrims on this journey. There are 3 areas in iBridge that you may join us in:
+  then the iBridge community is here to help you find spiritual friends who are also fellow pilgrims on this journey. 
+
+  There are 4 areas in iBridge that you may join us in:-
 
   * [Headstart programme](/ibridge/headstart-programme)
-  * [Face2Face Fellowship](/ibridge/face2face-fellowship)
   * [iBridge Camp](/ibridge/ibridge-camp)
+  * [Face2Face](/ibridge/face2face-fellowship)
+  * [iBridge Camp](/ibridge/ibridge-camp)
+  * [iBridge FB Group](https://www.facebook.com/groups/18658303936)
 
   {% endeditable_text %}
 {% endblock %}
 
-{% block event %}
+{% block 'event/carousel' %}
+.item.active.carousel-background{style: "background-image: url('{{ 'banner-christmas-web.jpg' | theme_image_url }}')"}
+  .container
+    .carousel-caption
+      %h1.font-lobster {% editable_text "Event Title", hint: "event title", format: raw, rows: 1 %}iBridge Facebook Group{% endeditable_text %}
+      %p {% editable_text "Event Description", hint: "event description", format: raw, rows: 1 %}Connecting Lives in Transition{% endeditable_text %}
+      %a.btn.btn-success{role: "button", href: "https://www.facebook.com/groups/18658303936"} JOIN US
 {% endblock %}
