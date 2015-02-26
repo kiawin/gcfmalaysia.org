@@ -1,0 +1,26 @@
+---
+title: Email Sign Up
+position: 1
+published: true
+---
+{% extends parent %}
+
+{% block carousel/header %}
+%p Email Sign Up
+{% endblock %}
+
+{% block main/header %}
+%h2.featurette-heading.padding-bottom-50
+  Email
+  %span.text-muted Sign Up 
+{% endblock %}
+
+{% block main/content %}
+:markdown
+  {% editable_text "content", rows: 20 %}
+  ## Coming Soon
+  {% endeditable_text %}
+{% endblock %}
+
+{% block event %}
+{% endblock %}

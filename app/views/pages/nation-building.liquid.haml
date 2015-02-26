@@ -1,0 +1,18 @@
+---
+title: Nation Building (Do not edit)
+position: 3
+published: false
+---
+{% extends page %}
+
+{% block carousel %}
+
+.item.active.carousel-background{style: "background-image: url('{{ 'banner-nation-web.jpg' | theme_image_url }}')"}
+  .container
+    .carousel-caption
+      %h1.font-lobster Nation Building
+      {% block header %}
+      / %p Page Title
+      {% endblock %}
+
+{% endblock %}

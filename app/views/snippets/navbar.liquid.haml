@@ -1,0 +1,94 @@
+/
+  Bootstrap 3 Navbar
+  Addon: https://github.com/CWSpear/bootstrap-hover-dropdown
+  \==================================================
+%nav.navbar.navbar-inverse.navbar-fixed-top{role: "navigation"}
+  .container
+    .navbar-header
+      %button.navbar-toggle.collapsed{"data-toggle" => ".navbar-ex1-collapse", "data-toggle" => "collapse", type: "button", "data-target" => "#navbar", "aria-expanded" => "false", "aria-controls" => "navbar"}
+        %span.sr-only Toggle Navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      / %a.navbar-brand{href: "#"} Graduate Christian Fellowship Malaysia
+    #navbar.collapse.navbar-collapse.navbar-ex1-collapse
+      %ul.nav.navbar-nav
+        %li.active
+          %a{href: "/"}
+            %span.glyphicon.glyphicon-home{'aria-hidden' => 'true'}
+        %li.dropdown
+          %a.dropdown-toggle{"data-toggle" => "dropdown", "data-hover" => "dropdown", href: "#"}
+            iBridge
+            / %b.caret
+          %ul.dropdown-menu
+            %li
+              %a{href: "/ibridge/who-we-are"} Who We Are
+            %li
+              %a{href: "/ibridge/headstart-programme"} HeadStart Programme
+            %li
+              %a{href: "/ibridge/ibridge-camp"} iBridge Camp
+            %li
+              %a{href: "/ibridge/face2face-fellowship"} Face2Face Fellowship
+        %li.dropdown
+          %a.dropdown-toggle{"data-toggle" => "dropdown", "data-hover" => "dropdown", href: "#"}
+            Marketplace
+            / %b.caret
+          %ul.dropdown-menu
+            %li
+              %a{href: "/marketplace/cat-and-dog"} Cat &amp; Dog - Look at the Cross 
+            %li
+              %a{href: "/marketplace/forums-and-talks"} Forum &amp; Talks
+        %li.dropdown
+          %a.dropdown-toggle{"data-toggle" => "dropdown", "data-hover" => "dropdown", href: "#"}
+            Nation Building
+            / %b.caret
+          %ul.dropdown-menu
+            %li
+              %a{href: "/nation-building/paca-training"} PACA Training
+            %li
+              %a{href: "/nation-building/national-education-agenda"} National Education Agenda
+        %li.dropdown
+          %a.dropdown-toggle{"data-toggle" => "dropdown", "data-hover" => "dropdown", href: "#"}
+            Regional
+            / %b.caret
+          %ul.dropdown-menu
+            %li
+              %a{href: "/regional/eagc"} East Asia Graduate Conference
+        %li.dropdown
+          %a.dropdown-toggle{"data-toggle" => "dropdown", "data-hover" => "dropdown", href: "#"}
+            Resources
+            / %b.caret
+          %ul.dropdown-menu
+            %li
+              %a{href: "/resources/articles"} Articles
+            %li
+              %a{href: "/resources/videos"} Videos
+
+      %ul.nav.navbar-nav.navbar-right
+        %li.dropdown
+          %a.dropdown-toggle{"data-toggle" => "dropdown", "data-hover" => "dropdown", href: "#"}
+            About
+            / %b.caret
+          %ul.dropdown-menu
+            %li
+              %a{href: "/about/exco-and-staff"} Exco &amp; Staff
+            %li
+              %a{href: "/about/vision-and-mission"} Vision &amp; Mission
+            %li
+              %a{href: "/about/history"} History
+            %li
+              %a{href: "/about/constitution"} Constitution
+        %li.dropdown
+          %a.dropdown-toggle{"data-toggle" => "dropdown", "data-hover" => "dropdown", href: "#"}
+            Contact
+            / %b.caret
+          %ul.dropdown-menu
+            %li
+              %a{href: "/contact/email-sign-up"} Email Sign Up
+            %li
+              %a{href: "/contact/our-network"} Our Network
+            %li
+              %a{href: "/contact/donation-and-pledge"} Donation &amp; Pledge
+            %li
+              %a{href: "/contact/volunteer"} Volunteer
+    / /.navbar-collapse

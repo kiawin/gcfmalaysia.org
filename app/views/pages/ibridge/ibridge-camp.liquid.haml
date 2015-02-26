@@ -1,0 +1,39 @@
+---
+title: iBridge Camp
+position: 3
+published: true
+---
+{% extends parent %}
+
+{% block carousel/header %}
+%p Camp
+{% endblock %}
+
+{% block main/header %}
+%h2.featurette-heading
+  iBridge
+  %span.text-muted Camp
+{% endblock %}
+
+{% block main/content %}
+:markdown
+  {% editable_text "content", rows: 20 %}
+  iBridge organizes Annual iBridge camps since 2011. Our camp are usually held during long public holiday weekend and has attracted 70 to 120 campers every year. 
+
+  iBridge camper once wrote
+
+  "But the ONE thing that a camp can do, that nothing else can as effectively, is to TRANSFORM. And iBridge is in the business of transforming mindsets for victorious & impactful living in the marketplace. We want people to leave the camp with a new way of looking at things. When people come away from their workplace to a safe haven (which we must try to provide), they have a golden opportunity to take a step back, see the big picture of their lives, redefine their goals and chart new directions. All in an atmosphere of prayer and submission to God's purposes."
+
+  Some of the topics from previous iBridge camps:
+
+  * One Career, 101 Lessons
+  * Talent migration
+  * Sabbath 
+  * Practical discernment  - Choosing job, ministries, finding life partner, response to certain opinions etc)
+  * Biblical perspective on financial management - Professional advise on purchasing car, house, investment, saving, generous giving for mission, retirement, etc
+  
+  {% endeditable_text %}
+{% endblock %}
+
+{% block 'event' %}
+{% endblock %}

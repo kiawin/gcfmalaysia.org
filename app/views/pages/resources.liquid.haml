@@ -1,0 +1,18 @@
+---
+title: Resources (Do not edit)
+position: 5
+published: false
+---
+{% extends page %}
+
+{% block carousel %}
+
+.item.active.carousel-background{style: "background-image: url('{{ 'banner-worship-web.jpg' | theme_image_url }}')"}
+  .container
+    .carousel-caption
+      %h1.font-lobster Resources
+      {% block header %}
+      / %p Page Title
+      {% endblock %}
+
+{% endblock %}

@@ -1,0 +1,18 @@
+---
+title: Contact (Do not edit)
+position: 7
+published: false
+---
+{% extends page %}
+
+{% block carousel %}
+
+.item.active.carousel-background{style: "background-image: url('{{ 'banner-christmas-web.jpg' | theme_image_url }}')"}
+  .container
+    .carousel-caption
+      %h1.font-lobster Contact
+      {% block header %}
+      / %p Page Title
+      {% endblock %}
+
+{% endblock %}
