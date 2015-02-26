@@ -28,104 +28,11 @@ published: true
 
   %body
 
-    /
-      Bootstrap 3 Navbar
-      Addon: https://github.com/CWSpear/bootstrap-hover-dropdown
-      \==================================================
-    %nav.navbar.navbar-inverse.navbar-fixed-top{role: "navigation"}
-      .container
-        .navbar-header
-          %button.navbar-toggle.collapsed{"data-toggle" => ".navbar-ex1-collapse", "data-toggle" => "collapse", type: "button", "data-target" => "#navbar", "aria-expanded" => "false", "aria-controls" => "navbar"}
-            %span.sr-only Toggle Navigation
-            %span.icon-bar
-            %span.icon-bar
-            %span.icon-bar
-          / %a.navbar-brand{href: "#"} Graduate Christian Fellowship Malaysia
-        #navbar.collapse.navbar-collapse.navbar-ex1-collapse
-          %ul.nav.navbar-nav
-            %li.active
-              %a{href: "#"}
-                %span.glyphicon.glyphicon-home{'aria-hidden' => 'true'}
-            %li.dropdown
-              %a.dropdown-toggle{"data-toggle" => "dropdown", "data-hover" => "dropdown", href: "#"}
-                iBridge
-                / %b.caret
-              %ul.dropdown-menu
-                %li
-                  %a{href: "#"} Who We Are
-                %li
-                  %a{href: "#"} HeadStart Program
-                %li
-                  %a{href: "#"} iBridge Camp
-                %li
-                  %a{href: "#"} Face2Face Fellowship
-            %li.dropdown
-              %a.dropdown-toggle{"data-toggle" => "dropdown", "data-hover" => "dropdown", href: "#"}
-                Marketplace
-                / %b.caret
-              %ul.dropdown-menu
-                %li
-                  %a{href: "#"} Cat &amp; Dog - Look at the Cross 
-                %li
-                  %a{href: "#"} Forum &amp; Talks
-            %li.dropdown
-              %a.dropdown-toggle{"data-toggle" => "dropdown", "data-hover" => "dropdown", href: "#"}
-                Nation Building
-                / %b.caret
-              %ul.dropdown-menu
-                %li
-                  %a{href: "#"} PACA Training
-                %li
-                  %a{href: "#"} National Education Agenda
-            %li.dropdown
-              %a.dropdown-toggle{"data-toggle" => "dropdown", "data-hover" => "dropdown", href: "#"}
-                Regional
-                / %b.caret
-              %ul.dropdown-menu
-                %li
-                  %a{href: "#"} East Asia Graduate Conference
-            %li.dropdown
-              %a.dropdown-toggle{"data-toggle" => "dropdown", "data-hover" => "dropdown", href: "#"}
-                Resources
-                / %b.caret
-              %ul.dropdown-menu
-                %li
-                  %a{href: "#"} Articles
-                %li
-                  %a{href: "#"} Videos
-
-          %ul.nav.navbar-nav.navbar-right
-            %li.dropdown
-              %a.dropdown-toggle{"data-toggle" => "dropdown", "data-hover" => "dropdown", href: "#"}
-                About
-                / %b.caret
-              %ul.dropdown-menu
-                %li
-                  %a{href: "#"} Exco &amp; Staff
-                %li
-                  %a{href: "#"} Vision &amp; Mission
-                %li
-                  %a{href: "#"} History
-                %li
-                  %a{href: "#"} Constitution
-            %li.dropdown
-              %a.dropdown-toggle{"data-toggle" => "dropdown", "data-hover" => "dropdown", href: "#"}
-                Contact
-                / %b.caret
-              %ul.dropdown-menu
-                %li
-                  %a{href: "#"} Email Sign Up
-                %li
-                  %a{href: "#"} Our Network
-                %li
-                  %a{href: "#"} Donation &amp; Pledge
-                %li
-                  %a{href: "#"} Volunteer
-        / /.navbar-collapse
+    {% include "navbar" %}
 
 
     /
-      Bootstrap 3 Carousel
+      Carousel
       \==================================================
     #myCarousel.carousel.slide{"data-ride" => "carousel"}
       %ol.carousel-indicators
@@ -170,21 +77,27 @@ published: true
 
     / /.carousel
 
+
     /
-      Bootstrap 3 Featurettes
+      Featurettes
       \==================================================
     .container
       .row.featurette
         .col-md-9
-          %h2.featurette-heading mobilise graduates to impact <br/><span class="text-muted">society for the glory of Christ</span>
+          %h2.featurette-heading
+            mobilise graduates to impact
+            %br
+            %span.text-muted society for the glory of Christ
           %p.lead “Call to me and I will answer you and tell you great and unsearchable things you do not know.” -Jeremiah 33:3
         .col-md-3
           %img.featurette-image.img-responsive{src: "{{ 'gcf_logo_white_full.png' | theme_image_url }}"}
 
-      %hr.featurette-divider
+      .featurette-divider
+    / /.featurette
+
 
     /
-      Bootstrap 3 Single-image Carousel
+      Event
       \==================================================
     #myCarousel2.carousel
       .carousel-inner{role: "listbox"}
@@ -198,28 +111,11 @@ published: true
 
 
 
+    {% include "footer" %}
+    
 
     /
-      Bootstrap 3 Footer
-      \==================================================
-    .container
-      %hr.featurette-divider
-      %footer
-        %p.pull-right
-          %a{href: "#"} Back to top
-        %p 
-          &copy; 2015 Graduate Christian Fellowship Malaysia 
-          &middot;
-          %a{href: "https://www.facebook.com/gcf.malaysia"} Facebook
-          &middot;
-          %a{href: "mailto:ibridge.email@gmail.com"} Email
-
-    / /.footer
-
-
-
-    /
-      Bootstrap 3 JS
+      JS
       \==================================================
     %script{src: "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js", type: "text/javascript"}
     {{ 'bootstrap.min.js' | javascript_tag }}

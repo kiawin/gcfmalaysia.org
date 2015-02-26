@@ -1,0 +1,52 @@
+---
+title: Who We Are
+position: 1
+published: true
+---
+{% extends parent %}
+
+{% block carousel/header %}
+%p Who We Are
+{% endblock %}
+
+{% block main/header %}
+%h2.featurette-heading.padding-bottom-50
+  iBridge
+  %span.text-muted Connecting Lives in Transition
+{% endblock %}
+
+{% block main/content %}
+:markdown
+  {% editable_text "content", rows: 20 %}
+  ## What is iBridge  
+
+  iBridge is a ministry by Graduates Christian Fellowship of Malaysia (GCF) that is focused on young graduates. It is mainly made up of young Malaysia Christian graduates who aims to Follow Jesus in every aspect of their life.
+
+  ## Our Mission
+
+  iBridge aims to encourage networking, spiritual friendship and mentoring among young Christian graduates in Malaysia.
+
+  * Networking to connect lives in transition
+  * Spiritual Friendships to cultivate praying partners.
+  * Mentoring to create lifelong disciples.
+
+  ## Our Activities
+
+  If you are a young Christian graduate struggling to:
+
+  * transition from campus to the marketplace,
+  * follow God in the "real world",
+  * find meaning in your work,
+  * keep your faith alive...
+
+  then the iBridge community is here to help you find spiritual friends who are also fellow pilgrims on this journey. There are 3 areas in iBridge that you may join us in:
+
+  * [Headstart programme](/ibridge/headstart-programme)
+  * [Face2Face Fellowship](/ibridge/face2face-fellowship)
+  * [iBridge Camp](/ibridge/ibridge-camp)
+
+  {% endeditable_text %}
+{% endblock %}
+
+{% block event %}
+{% endblock %}

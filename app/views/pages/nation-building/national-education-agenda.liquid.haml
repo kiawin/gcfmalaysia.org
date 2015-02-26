@@ -1,0 +1,26 @@
+---
+title: National Education Agenda
+position: 2
+published: true
+---
+{% extends parent %}
+
+{% block carousel/header %}
+%p National Education Agenda
+{% endblock %}
+
+{% block main/header %}
+%h2.featurette-heading.padding-bottom-50
+  National Education
+  %span.text-muted Agenda
+{% endblock %}
+
+{% block main/content %}
+:markdown
+  {% editable_text "content", rows: 20 %}
+  ## Coming Soon
+  {% endeditable_text %}
+{% endblock %}
+
+{% block event %}
+{% endblock %}

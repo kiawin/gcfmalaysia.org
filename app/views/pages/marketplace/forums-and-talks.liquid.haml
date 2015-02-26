@@ -1,0 +1,26 @@
+---
+title: Forums &amp; Talks
+position: 2
+published: true
+---
+{% extends parent %}
+
+{% block carousel/header %}
+%p Forums &amp; Talks
+{% endblock %}
+
+{% block main/header %}
+%h2.featurette-heading.padding-bottom-50
+  Forums 
+  %span.text-muted &amp; Talks
+{% endblock %}
+
+{% block main/content %}
+:markdown
+  {% editable_text "content", rows: 20 %}
+  ## Coming Soon
+  {% endeditable_text %}
+{% endblock %}
+
+{% block event %}
+{% endblock %}

@@ -1,0 +1,37 @@
+---
+title: Face2Face Fellowship
+position: 4
+published: true
+---
+{% extends parent %}
+
+{% block carousel/header %}
+%p Face2Face Fellowship
+{% endblock %}
+
+{% block main/header %}
+%h2.featurette-heading
+  Face2Face
+  %span.text-muted Fellowship
+{% endblock %}
+
+{% block main/content %}
+:markdown
+  {% editable_text "content", rows: 20 %}
+  ## Gatherings, Dinners, Outings
+
+  iBridge organized informal gatherings on an average of once in 3 months. These are avenues where Christians can seek to have fun, fellowship and spiritual friendships.  We believe that great friendships occur most effectively when we spend time together in a community setting.
+
+  Join iBridge Facebook group for announcement of events.
+  
+  {% endeditable_text %}
+{% endblock %}
+
+{% block 'event/carousel' %}
+.item.active.carousel-background{style: "background-image: url('{{ 'banner-outing-web.jpg' | theme_image_url }}')"}
+  .container
+    .carousel-caption
+      %h1.font-lobster {% editable_text "Event Title", hint: "event title", format: raw, rows: 1 %}iBridge Facebook Group{% endeditable_text %}
+      %p {% editable_text "Event Description", hint: "event description", format: raw, rows: 1 %}Connecting Lives in Transition{% endeditable_text %}
+      %a.btn.btn-success{role: "button", href: "https://www.facebook.com/groups/18658303936"} JOIN US
+{% endblock %}

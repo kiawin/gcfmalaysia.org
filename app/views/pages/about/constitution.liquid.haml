@@ -1,0 +1,26 @@
+---
+title: Constitution
+position: 4
+published: true
+---
+{% extends parent %}
+
+{% block carousel/header %}
+%p Constitution
+{% endblock %}
+
+{% block main/header %}
+%h2.featurette-heading.padding-bottom-50
+  Constitution
+  %span.text-muted  
+{% endblock %}
+
+{% block main/content %}
+:markdown
+  {% editable_text "content", rows: 20 %}
+  ## Coming Soon
+  {% endeditable_text %}
+{% endblock %}
+
+{% block event %}
+{% endblock %}

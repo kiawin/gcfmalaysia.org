@@ -1,0 +1,26 @@
+---
+title: EAGC
+position: 1
+published: true
+---
+{% extends parent %}
+
+{% block carousel/header %}
+%p East Asia Graduate Conference
+{% endblock %}
+
+{% block main/header %}
+%h2.featurette-heading.padding-bottom-50
+  East Asia
+  %span.text-muted Graduate Conference
+{% endblock %}
+
+{% block main/content %}
+:markdown
+  {% editable_text "content", rows: 20 %}
+  ## Coming Soon
+  {% endeditable_text %}
+{% endblock %}
+
+{% block event %}
+{% endblock %}

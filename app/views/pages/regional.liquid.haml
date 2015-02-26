@@ -1,0 +1,18 @@
+---
+title: Regional (Do not edit)
+position: 4
+published: false
+---
+{% extends page %}
+
+{% block carousel %}
+
+.item.active.carousel-background{style: "background-image: url('{{ 'banner-eagc-web.jpg' | theme_image_url }}')"}
+  .container
+    .carousel-caption
+      %h1.font-lobster Regional
+      {% block header %}
+      / %p Page Title
+      {% endblock %}
+
+{% endblock %}
