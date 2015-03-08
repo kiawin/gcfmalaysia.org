@@ -18,9 +18,27 @@ published: true
 {% block main/content %}
 :markdown
   {% editable_text "content", rows: 20 %}
-  ## Coming Soon
+  GCF as non-profit non-exclusive organization GCF operate based on donation. The GCF Executive Committee needs your prayer and financial support to help us realize our shared vision and to fulfil our objectives. We are committed to reach out and mobilise local and overseas graduates to be involved spiritually and socially in transforming and making an impact in Malaysian society.
+
+  We therefore appeal to Churches and Christians to support us in our efforts which we have been led by God to commit ourselves to for His greater Glory. We invite you to partner us in this mission for the extension of his kingdom in the hearts and lives of all young graduate Christians in Malaysia and beyond.
+
+  Please make all checks payable to “Graduates Christian Fellowship” and post to: P.O Box 8320 Kelana Jaya Post Office, 46786 Kelana Jaya. Selangor. Malaysia. Or 
+
+  By online transfer/ATM as below:
+
+  > **Bank:** Maybank Berhad  
+  > **Account number:** 512-231-333-111  
+  > **Name:**  Graduates Christian Fellowship Malaysia
+
+  Please email to gcf.msia@gmail.com to inform us and for us to issue you the receipt to acknowledge of receiving.
+
   {% endeditable_text %}
 {% endblock %}
 
-{% block event %}
+{% block event/carousel %}
+.item.active.carousel-background{style: "background-image: url('{{ 'banner-nation-web.jpg' | theme_image_url }}')"}
+  .container
+    .carousel-caption
+      %h1.font-lobster {% editable_text "Event Title", hint: "event title", format: raw, rows: 1 %}"For just as we have many members in one body and all the members do not have the same function, so we, who are many, are one body in Christ, and individually members one of another"{% endeditable_text %}
+      %p {% editable_text "Event Description", hint: "event description", format: raw, rows: 1 %}Romans 12:4-5{% endeditable_text %}
 {% endblock %}

@@ -1,0 +1,27 @@
+---
+title: Conference &amp; Training
+position: 3
+published: true
+---
+{% extends parent %}
+
+{% block carousel/header %}
+%p Conference &amp; Training
+{% endblock %}
+
+{% block main/header %}
+%h2.featurette-heading.padding-bottom-50
+  Conference
+  %span.text-muted &amp; Training
+{% endblock %}
+
+{% block main/content %}
+:markdown
+  {% editable_text "content", rows: 20 %}
+  Mobilise graduates through a series of workshops and training of graduates to live more effectively for God and nation building such as PACA training, conference on national education blueprint and mentoring graduates who are interested in the political arena.
+  
+  {% endeditable_text %}
+{% endblock %}
+
+{% block event %}
+{% endblock %}
