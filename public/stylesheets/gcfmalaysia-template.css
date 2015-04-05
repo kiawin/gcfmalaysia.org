@@ -31,7 +31,7 @@ body {
  */
 .dropdown > a,
 .dropdown-menu > li > a {
-  font-size: 120%;
+  font-size: 150%;
 }
 
 /**
@@ -56,11 +56,58 @@ body {
   filter: alpha(opacity=40)
 }
 
+.carousel-caption > h1 {
+  font-size: 300%;
+}
+.carousel-caption > p,
+.carousel-caption > a {
+  font-size: 160%;
+}
+
 /**
  * Featurette related hacks
  */
 .featurette-text-top {
     margin: 0;
+}
+
+.featurette-text-uppercase {
+    text-transform: uppercase;
+}
+
+.featurette-text-smaller {
+    font-size: 90%;
+}
+
+
+.featurette > .col-md-12 > p,
+.featurette > .col-md-12 > ul,
+.featurette > .col-md-12 > ol,
+.featurette > .col-md-12 > pre,
+.featurette > .col-md-12 > blockquote,
+.featurette > .col-md-12 > h4,
+.featurette > .col-md-12 > table,
+.featurette > .col-md-12 > table {
+  font-size: 150%;
+}
+
+.featurette > .col-md-12 > table > thead > tr > th {
+  color: white;
+}
+
+.featurette > .col-md-12 > table > thead > th,
+.featurette > .col-md-12 > table > tbody > tr > td {
+  padding: 10px;
+}
+
+.featurette > .col-md-12 > p,
+.featurette > .col-md-12 > h2 {
+  padding-top: 10px;
+}
+
+.featurette > .col-md-12 > table {
+  padding-top: 10px;
+  margin-bottom: 10px;
 }
 
 /**

@@ -28,98 +28,17 @@ published: true
 
   %body
 
-    {% include "navbar" %}
-
-
-    /
-      Carousel
-      \==================================================
-    #myCarousel.carousel.slide{"data-ride" => "carousel"}
-      %ol.carousel-indicators
-        %li.active{"data-target" => "#myCarousel", "data-slide-to" => "0"}
-        %li{"data-target" => "#myCarousel", "data-slide-to" => "1"}
-        %li{"data-target" => "#myCarousel", "data-slide-to" => "2"}
-        %li{"data-target" => "#myCarousel", "data-slide-to" => "3"}
-        %li{"data-target" => "#myCarousel", "data-slide-to" => "4"}
-        %li{"data-target" => "#myCarousel", "data-slide-to" => "5"}
-        %li{"data-target" => "#myCarousel", "data-slide-to" => "6"}
-        %li{"data-target" => "#myCarousel", "data-slide-to" => "7"}
-
-      .carousel-inner{role: "listbox"}
-        .item.active.carousel-background{style: "background-image: url('{{ 'banner-christmas-web.jpg' | theme_image_url }}')"}
-          .container
-            / .carousel-caption
-            /   %h1.font-lobster East Asia Graduate Conference
-            /   %p Mobilise graduates to impact society for the glory of Christ
-        .item.carousel-background{style: "background-image: url('{{ 'banner-ibridge-web.jpg' | theme_image_url }}')"}
-          .container
-            / .carousel-caption
-            /   %h1.font-lobster East Asia Graduate Conference
-            /   %p Mobilise graduates to impact society for the glory of Christ
-        .item.carousel-background{style: "background-image: url('{{ 'banner-nation-web.jpg' | theme_image_url }}')"}
-          .container
-            / .carousel-caption
-            /   %h1.font-lobster East Asia Graduate Conference
-            /   %p Mobilise graduates to impact society for the glory of Christ
-        .item.carousel-background{style: "background-image: url('{{ 'banner-talks-web.jpg' | theme_image_url }}')"}
-          .container
-            / .carousel-caption
-            /   %h1.font-lobster East Asia Graduate Conference
-            /   %p Mobilise graduates to impact society for the glory of Christ
-        .item.carousel-background{style: "background-image: url('{{ 'banner-worship-web.jpg' | theme_image_url }}')"}
-          .container
-            / .carousel-caption
-            /   %h1.font-lobster East Asia Graduate Conference
-            /   %p Mobilise graduates to impact society for the glory of Christ
-        .item.carousel-background{style: "background-image: url('{{ 'banner-outing-web.jpg' | theme_image_url }}')"}
-          .container
-            / .carousel-caption
-            /   %h1.font-lobster East Asia Graduate Conference
-            /   %p Mobilise graduates to impact society for the glory of Christ
-        .item.carousel-background{style: "background-image: url('{{ 'banner-eagc-web.jpg' | theme_image_url }}')"}
-          .container
-            / .carousel-caption
-            /   %h1.font-lobster East Asia Graduate Conference
-            /   %p Mobilise graduates to impact society for the glory of Christ
-        .item.carousel-background{style: "background-image: url('{{ 'banner-headstart-web.jpg' | theme_image_url }}')"}
-          .container
-            / .carousel-caption
-            /   %h1.font-lobster East Asia Graduate Conference
-            /   %p Mobilise graduates to impact society for the glory of Christ
-
-    / /.carousel
-
-
-    /
-      Featurettes
-      \==================================================
-    .container
-      .row.featurette
-        .col-md-9
-          %h2.featurette-heading.margin-top-0
-            mobilise graduates to impact
-            %br
-            %span.text-muted society for the glory of Christ
-          %p.lead We are a non-profit non-exclusive organization for Christian graduates, professionals and anyone who wishes to play a meaningful role in the marketplace and in society in general.
-          %p.lead Growing out from the ministry of the Fellowship of Evangelical Students (FES) in Malaysia and Singapore, Graduate Christian Fellowship (GCF) has evolved from an informal gathering for fellowship and mutual encouragement into a movement of people committed to make a moral impact in the society and make their live count for Christ!
-        .col-md-3
-          %img.featurette-image.img-responsive.vertical-align-top{src: "{{ 'gcf_logo_white_full.png' | theme_image_url }}"}
-
-      .featurette-divider
-    / /.featurette
-
-
     /
       Event
       \==================================================
     #myCarousel2.carousel
       .carousel-inner{role: "listbox"}
-        .item.active.carousel-background{style: "background-image: url('{{ 'cny2015-street-simple.jpg' | theme_image_url }}')"}
+        .item.active.carousel-background{style: "background-image: url('{{ 'banner-christmas-web.jpg' | theme_image_url }}')"}
           .container
             .carousel-caption
-              %h1.font-lobster {% editable_text "Event Title", hint: "event title", format: raw, rows: 1 %}iBridge Chinese New Year Gathering{% endeditable_text %}
-              %p {% editable_text "Event Description", hint: "event description", format: raw, rows: 1 %}FEBRUARY 28, 2015{% endeditable_text %}
-              %a.btn.btn-success{role: "button", href: "https://www.facebook.com/events/556774091092360"} JOIN US
+              %h1.font-lobster Coming Soon
+              %p Graduate Christian Fellowship Malaysia
+              %a.btn.btn-success{role: "button", href: "https://www.facebook.com/gcf.malaysia"} We're On Facebook!
       .carousel-caption-background
 
 
