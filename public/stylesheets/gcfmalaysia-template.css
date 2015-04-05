@@ -31,7 +31,7 @@ body {
  */
 .dropdown > a,
 .dropdown-menu > li > a {
-  font-size: 140%;
+  font-size: 150%;
 }
 
 /**
@@ -88,7 +88,11 @@ body {
 .featurette > .col-md-12 > h4,
 .featurette > .col-md-12 > table,
 .featurette > .col-md-12 > table {
-  font-size: 140%;
+  font-size: 150%;
+}
+
+.featurette > .col-md-12 > table > thead > tr > th {
+  color: white;
 }
 
 .featurette > .col-md-12 > table > thead > th,
