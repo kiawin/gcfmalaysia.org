@@ -40,15 +40,21 @@ published: true
   The campsite usually at a place to unwind, relax and enjoy the beauty and sounds of nature. There are times where one just has to get away from the hustle and bustle of the city. What better place than the venue chosen will be either near the sea, mountain or jungle which is nestled among the beauty of nature with lush greeneries and a flowing stream. The serenity of the campsite will immediately envelope you with a sense of relaxation and peace. Just the right place to recharge.
 
   {% endeditable_text %}
+
+%a{href: "https://ibridgecamp2015.wordpress.com"}
+  %img.featurette-image.img-responsive.vertical-align-top{src: "{{ 'banner-ibridge-2015-jump-poster.png' | theme_image_url }}"}
+
 {% endblock %}
 
 {% block 'event/carousel' %}
 .item.active.carousel-background{style: "background-image: url('{{ 'banner-outing-web.jpg' | theme_image_url }}')"}
   .container
     .carousel-caption
-      %h1.font-lobster {% editable_text "Event Title", hint: "event title", format: raw, rows: 1 %}iBridge Camp 2014{% endeditable_text %}
-      %p {% editable_text "Event Description", hint: "event description", format: raw, rows: 1 %}IMPACTING THE MARKET PLACE, TRANSITION TO THE MARKET PLACE{% endeditable_text %}
-      %a.btn.btn-success{role: "button", href: "http://ibridgecamp-2014.blogspot.com"} READ MORE
+      %h1.font-lobster {% editable_text "Event Title", hint: "event title", format: raw, rows: 1 %}iBridge Camp 2015{% endeditable_text %}
+      %p {% editable_text "Event Description", hint: "event description", format: raw, rows: 1 %}JULY 31 - AUGUST 3, 2015  PORT DICKSON METHODIST CENTER{% endeditable_text %}
+      %a.btn.btn-success{role: "button", href: "https://ibridgecamp2015.wordpress.com"} READ MORE
+      %a.btn.btn-success{role: "button", href: "https://www.facebook.com/events/1448813168745995"} JOIN US
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 {% endblock %}
 
 

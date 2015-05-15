@@ -1,0 +1,58 @@
+---
+title: Home
+published: true
+---
+!!!
+%html{lang: "en"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "content-type"}/
+    %meta{charset: "utf-8"}/
+    %title {{ site.name }}
+    %meta{content: "width=device-width, initial-scale=1, maximum-scale=1", name: "viewport"}/
+
+    {{ 'application.css' | stylesheet_tag }}
+    {{ 'carousel.css' | stylesheet_tag }}
+    {{ 'gcfmalaysia-template.css' | stylesheet_tag }}
+
+    /[if lt IE 9]
+      <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    %link{rel: "shortcut icon", href: "/samples/favicon.png"}/
+    %link{rel: "apple-touch-icon-precomposed", sizes: "144x144", href: "/samples/apple-touch-icon-144x144-precomposed.png"}/
+    %link{rel: "apple-touch-icon-precomposed", sizes: "114x114", href: "/samples/apple-touch-icon-114x114-precomposed.png"}/
+    %link{rel: "apple-touch-icon-precomposed", sizes: "72x72", href: "/samples/apple-touch-icon-72x72-precomposed.png"}/
+    %link{rel: "apple-touch-icon-precomposed", href: "/samples/apple-touch-icon-precomposed.png"}/
+    %link{rel: "stylesheet", type: "text/css", href: "http://fonts.googleapis.com/css?family=Lobster"}
+
+    {% inline_editor %}
+
+  %body
+
+    /
+      Event
+      \==================================================
+    #myCarousel2.carousel
+      .carousel-inner{role: "listbox"}
+        .item.active.carousel-background{style: "background-image: url('{{ 'banner-christmas-web.jpg' | theme_image_url }}')"}
+          .container
+            .carousel-caption
+              %h1.font-lobster Coming Soon
+              %p Graduate Christian Fellowship Malaysia
+              %a.btn.btn-success{role: "button", href: "https://www.facebook.com/gcf.malaysia"} We're On Facebook!
+      .carousel-caption-background
+
+
+
+    {% include "footer" %}
+    
+
+    /
+      JS
+      \==================================================
+    %script{src: "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js", type: "text/javascript"}
+    {{ 'bootstrap.min.js' | javascript_tag }}
+    {{ 'bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js' | javascript_tag }}
+    :javascript
+      $(document).ready(function() {
+      });
+    / /.js
