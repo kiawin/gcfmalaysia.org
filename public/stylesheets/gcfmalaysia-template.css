@@ -64,6 +64,16 @@ body {
   font-size: 160%;
 }
 
+#myCarousel3.carousel,
+#myCarousel3.carousel > .carousel-inner,
+#myCarousel3.carousel > .carousel-inner > .carousel-background {
+  height: 300px;
+}
+
+#myCarousel3.carousel > .carousel-caption-background {
+  margin-top: 100px;
+}
+
 /**
  * Featurette related hacks
  */
