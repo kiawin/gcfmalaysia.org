@@ -120,11 +120,22 @@ published: true
               %h1.font-lobster {% editable_text "Event Title", hint: "event title", format: raw, rows: 1 %}{% endeditable_text %}
               %p {% editable_text "Event Description", hint: "event description", format: raw, rows: 1 %}JULY 31 - AUGUST 3, 2015  PORT DICKSON METHODIST CENTER{% endeditable_text %}
               %a.btn.btn-success{role: "button", href: "https://ibridgecamp2015.wordpress.com"} READ MORE
-              %a.btn.btn-success{role: "button", href: "https://www.facebook.com/events/1448813168745995"} JOIN US
+              %a.btn.btn-success{role: "button", href: "https://www.facebook.com/events/1448813168745995"} JOIN US 
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              
+
       .carousel-caption-background
 
+    #myCarousel3.carousel
+      .carousel-inner{role: "listbox"}
+        .item.active.carousel-background{style: "background-color: white;"}
+          .container
+            .carousel-caption
+              %h1.font-lobster{style: "color: #000;"} {% editable_text "Event Title", hint: "event title", format: raw, rows: 1 %}Rest for Renewal & Revision for Renovation{% endeditable_text %}
+              %p {% editable_text "Event Description", hint: "event description", format: raw, rows: 1 %}JULY 31 - AUGUST 3, 2015  PORT DICKSON METHODIST CENTER<br/>RETREAT WITH KOICHI OHTAWA{% endeditable_text %}
+              %a.btn.btn-success{role: "button", href: "https://www.dropbox.com/s/p2stgfarnap6hfi/GCF%20Retreat%20with%20Koichi%20Ohtawa%20%28Brochure%29.pdf?dl=0"} BROCHURE
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              
+      .carousel-caption-background
 
 
     {% include "footer" %}
